@@ -1,0 +1,2 @@
+- [x] Move resume PDF from src/assets to public/ for GitHub accessibility
+- [x] Update the Resume link to download the PDF instead of opening in browser
