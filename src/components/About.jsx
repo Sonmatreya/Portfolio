@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import AboutImage from "../assets/aboutme-image.png";
+import AboutImage from "../assets/aboutme-image.jpg";
 
 const skills = [
   { name: "HTML & CSS", level: "83.33%" },
@@ -109,7 +109,7 @@ const About = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-yellow-500">
-                  4
+                  6
                 </h3>
                 <p className="text-lg text-white-400">Projects Completed</p>
               </div>

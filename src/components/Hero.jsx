@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaChevronDown } from 'react-icons/fa'; // scroll arrow
-import HeroImage from '../assets/hero-image.png';
+import HeroImage from '../assets/hero-image.jpg';
 import ReactTypingEffect from 'react-typing-effect';
 
 const Hero = () => {

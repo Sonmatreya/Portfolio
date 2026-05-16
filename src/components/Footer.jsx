@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="flex-1 mb-4 md:mb-0">
             <h3 className="text-2xl font-bold mb-2">MySelf</h3>
             <p className="text-red-800">
-              Full-Stack Developer based in the USA, specializing in web and
+              Full-Stack Developer based in the INDIA, specializing in web and
               software development.
             </p>
           </div>

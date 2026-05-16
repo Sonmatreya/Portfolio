@@ -4,41 +4,50 @@ import weather from "../assets/weather.png";
 import food from "../assets/food.png";
 import protfolio from "../assets/protfolio.png";
 import chat from "../assets/chat.png";
+import news from "../assets/news.png";
+
 const projects = [
   {
     id: 1,
-    name: "Tic-Tac-Toc",
+    name: "TIC-TAC-TOE",
     technologies: "HTML,CSS & JavaScript",
     image: tic,
     github: "https://github.com/Sonmatreya/Tic-Tac-Toe",
   },
   {
     id: 2,
-    name: "Weather-App",
+    name: "WEATHER-APP",
     technologies: "HTML,CSS & Javascript",
     image: weather,
     github: "https://github.com/Sonmatreya/Weather-App",
   },
   {
     id: 3,
-    name: "Chat-App",
+    name: "CHAT-APP",
     technologies: "MERN Stack",
     image: chat,
     github: "https://github.com/Sonmatreya/Chat-App",
   },
   {
   id: 4,
-  name: "Food-App",
+  name: "FOOD-APP",
   technologies: "MERN Stack",
   image: food,
   github: "https://github.com/Sonmatreya/Food-App",
   },
   {
   id: 5,
-  name: "Protfolio ",
+  name: "Protfolio",
   technologies: "MERN Stack",
   image: protfolio,
-  // github: "https://github.com/Sonmatreya/Chat-App",
+  github: "https://github.com/Sonmatreya/Chat-App",
+  },
+  {
+    id: 6,
+    name: "NEWS-PORTAL",
+    technologies: "MERN Stack",
+    image: news,
+    github: "https://github.com/Sonmatreya/E-news",
   },
 ];
 
