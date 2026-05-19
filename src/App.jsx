@@ -11,7 +11,7 @@ import Service from './components/Service'
 function App() {
 
   return (
-    <div>
+    <div  className="min-h-screen bg-gradient-to-br from-white via-gray-200 to-white">
         <Navbar />
         <Hero />
         <About />

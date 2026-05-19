@@ -11,34 +11,40 @@ const skills = [
 
 const About = () => {
   return (
-    <div className="bg-black text-white py-20" id="about">
+    <div className="bg-white text-black py-20" id="about" >
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
+
+        {/* Heading */}
         <motion.h2
-          className="text-4xl font-bold text-center mb-12"
+          className="text-4xl font-bold text-center mb-12 text-red-600"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
+          
         >
           About Me
         </motion.h2>
 
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
+
           {/* Profile Image */}
           <motion.img
             src={AboutImage}
             alt="About Me Profile"
-            className="w-72 h-80 rounded object-cover mb-8 md:mb-0 shadow-lg"
+            className="w-70 h-96 rounded-2xl object-cover mb-8 md:mb-0 shadow-2xl border-4 border-red-500"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           />
 
+          {/* Content */}
           <div className="flex-1">
+
             {/* Intro Text */}
             <motion.p
-              className="text-lg mb-8 leading-relaxed text-gray-300"
+              className="text-lg mb-8 leading-relaxed text-black-700"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
@@ -62,9 +68,9 @@ const About = () => {
                   viewport={{ once: true }}
                 >
                   <label className="w-2/12 mr-2">{skill.name}</label>
-                  <div className="grow bg-gray-800 rounded-full h-2.5 relative overflow-hidden group cursor-pointer">
+                  <div className="grow bg-white-800 rounded-full h-2.5 relative overflow-hidden group cursor-pointer">
                     <motion.div
-                      className="bg-gradient-to-r from-red-800 to-yellow-500 h-2.5 rounded-full relative transition-all duration-300"
+                      className="bg-gradient-to-r from-red-800 to-yellow-600 h-2.5 rounded-full relative transition-all duration-300"
                       style={{ width: skill.level }}
                       initial={{ width: 0 }}
                       whileInView={{ width: skill.level }}
@@ -72,7 +78,7 @@ const About = () => {
                       viewport={{ once: true }}
                       whileHover={{
                         scale: 1.02,
-                        boxShadow: "0 0 15px rgba(245, 158, 11, 0.4)"
+                        boxShadow: "0 0 15px rgba(234, 179, 8, 0.55)" 
                       }}
                     >
                       <motion.div
@@ -92,34 +98,77 @@ const About = () => {
                 </motion.div>
               ))}
             </div>
-
             {/* Stats */}
-            <motion.div
-              className="mt-12 flex flex-col md:flex-row justify-between text-center gap-8 md:gap-0"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              <div>
-                <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-yellow-500">
-                  FRESHER
-                </h3>
-                <p className="text-lg text-white-400">Years Experience</p>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-yellow-500">
-                  6
-                </h3>
-                <p className="text-lg text-white-400">Projects Completed</p>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-yellow-500">
-                  10+
-                </h3>
-                <p className="text-lg text-white-400">Happy Clients</p>
-              </div>
-            </motion.div>
+<motion.div
+  className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center"
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{
+    duration: 0.7,
+    delay: 0.4
+  }}
+  viewport={{ once: true }}
+>
+
+  {/* Experience */}
+  <div
+    className="bg-white rounded-2xl p-6 shadow-lg 
+    hover:shadow-[0_0_30px_rgba(239,68,68,0.8)] hover:-translate-y-2
+    active:shadow-[0_0_40px_rgba(220,38,38,1)]
+    transition duration-300 border border-red-500 cursor-pointer"
+  >
+    <h3
+      className="text-3xl font-bold text-transparent
+      bg-clip-text bg-gradient-to-r from-red-700 to-yellow-500"
+    >
+      Fresher
+    </h3>
+
+    <p className="mt-2">
+      Years Experience
+    </p>
+  </div>
+
+  {/* Projects */}
+  <div
+    className="bg-white rounded-2xl p-6 shadow-lg 
+    hover:shadow-[0_0_30px_rgba(239,68,68,0.8)] hover:-translate-y-2
+    active:shadow-[0_0_40px_rgba(220,38,38,1)]
+    transition duration-300 border border-red-400 cursor-pointer"
+  >
+    <h3
+      className="text-3xl font-bold text-transparent
+      bg-clip-text bg-gradient-to-r from-red-700 to-yellow-500"
+    >
+      6+
+    </h3>
+
+    <p className="mt-2">
+      Projects Completed
+    </p>
+  </div>
+
+  {/* Clients */}
+  <div
+    className="bg-white rounded-2xl p-6 shadow-lg 
+    hover:shadow-[0_0_30px_rgba(239,68,68,0.8)] hover:-translate-y-2
+    active:shadow-[0_0_40px_rgba(220,38,38,1)]
+    color-red-500
+    transition duration-300 border border-red-400 cursor-pointer"
+  >
+    <h3
+      className="text-3xl font-bold text-transparent
+      bg-clip-text bg-gradient-to-r from-red-700 to-yellow-500"
+    >
+      10+
+    </h3>
+
+    <p className="mt-2">
+      Happy Clients
+    </p>
+  </div>
+
+</motion.div>
           </div>
         </div>
       </div>

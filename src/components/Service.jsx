@@ -43,7 +43,7 @@ const services = [
 
 const Service = () => {
   return (
-    <div className="bg-black text-white py-20" id="service">
+    <div className="bg-white text-red-600 py-20" id="service">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         
         {/* Section Heading */}
@@ -63,8 +63,8 @@ const Service = () => {
             return (
               <motion.div
                 key={service.id}
-                className="group bg-gray-900/90 px-6 pt-6 pb-6 rounded-xl shadow-lg border border-transparent 
-                           transition-all duration-300"
+                className="group bg-white px-6 pt-6 pb-6 rounded-xl shadow-lg border border-red-600
+                           transition-all duration-300  cursor-pointer"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -83,12 +83,12 @@ const Service = () => {
                 >
                   <Icon
                     size={40}
-                    className="text-yellow-500 group-hover:text-red-800 transition-colors"
+                    className="text-red-800 group-hover:text-red-700 transition-colors"
                   />
                 </motion.div>
 
                 {/* Service ID */}
-                <div className="text-right text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-yellow-500">
+                <div className="text-right text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-red-500">
                   {service.id}
                 </div>
 
@@ -98,12 +98,12 @@ const Service = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="mt-2 text-gray-300">{service.description}</p>
+                <p className="mt-2 text-black">{service.description}</p>
 
                 {/* CTA */}
                 <a
                   href="#contact"
-                  className="mt-4 inline-block font-semibold text-red-800 hover:text-yellow-500 transition-colors"
+                  className="mt-4 inline-block font-semibold text-red-800 hover:text-red-600 transition-colors"
                 >
                   Read More →
                 </a>
