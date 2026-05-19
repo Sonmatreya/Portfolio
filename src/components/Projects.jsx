@@ -47,7 +47,7 @@ const projects = [
 
   {
     id: 5,
-    name: "PORTFOLIO",
+    name: "PROTFOLIO",
     technologies: "React & Tailwind CSS",
     image: protfolio,
     github: "https://github.com/Sonmatreya/Portfolio",
