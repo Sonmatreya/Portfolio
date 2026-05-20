@@ -71,7 +71,8 @@ const Projects = () => {
 
         {/* Heading */}
         <motion.h2
-          className="text-4xl font-bold text-center mb-14 text-red-700"
+          className="text-5xl font-extrabold text-center mb-14 pb-2 leading-normal text-transparent bg-clip-text
+          bg-gradient-to-r from-red-700 to-yellow-500"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

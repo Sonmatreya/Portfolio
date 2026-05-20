@@ -21,7 +21,7 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        "https://getform.io/f/aqoevrga",
+        "https://forminit.com/f/aqoevrga",
         {
           method: "POST",
           body: data,
